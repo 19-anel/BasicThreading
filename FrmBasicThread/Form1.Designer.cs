@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.btnRun = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblStatus
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(112, 125);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(330, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "-Before Starting Thread-";
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Location = new System.Drawing.Point(112, 125);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(330, 31);
+            this.lblStatus.TabIndex = 0;
+            this.lblStatus.Text = "-Before Starting Thread-";
             // 
             // btnRun
             // 
@@ -51,6 +51,7 @@
             this.btnRun.TabIndex = 1;
             this.btnRun.Text = "RUN";
             this.btnRun.UseVisualStyleBackColor = false;
+            this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
             // FrmBasicThread
             // 
@@ -59,7 +60,7 @@
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(568, 330);
             this.Controls.Add(this.btnRun);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblStatus);
             this.Name = "FrmBasicThread";
             this.Text = "FrmBasicThread";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -70,7 +71,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Button btnRun;
     }
 }
