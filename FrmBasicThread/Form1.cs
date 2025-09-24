@@ -30,13 +30,13 @@ namespace FrmBasicThread
             Thread ThreadA = new Thread(MyThreadClass.Thread1);
             ThreadA.Name = "Thread A";
 
-           Thread ThreadB = new Thread(MyThreadClass.Thread1);
-              ThreadB.Name = "Thread B";
-    
-                ThreadA.Start();
-                ThreadB.Start();
-    
-                lblStatus.Text = "-End of Thread-";
+            Thread ThreadB = new Thread(MyThreadClass.Thread1);
+            ThreadB.Name = "Thread B";
+
+            ThreadA.Start();
+            ThreadB.Start();
+
+            lblStatus.Text = "-End of Thread-";
         }
     }
 }

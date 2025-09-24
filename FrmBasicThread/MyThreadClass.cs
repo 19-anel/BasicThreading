@@ -16,7 +16,7 @@ namespace FrmBasicThread
                 Thread thread = Thread.CurrentThread;
                 Console.WriteLine("Name of Thread: " + thread.Name + " = " + loopCount);
 
-               Thread.Sleep(1500);
+                Thread.Sleep(1500);
             }
         }
     }
