@@ -36,6 +36,9 @@ namespace FrmBasicThread
             ThreadA.Start();
             ThreadB.Start();
 
+            ThreadA.Join();
+            ThreadB.Join();
+
             lblStatus.Text = "-End of Thread-";
         }
     }
